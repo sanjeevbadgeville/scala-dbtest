@@ -1,0 +1,10 @@
+{
+  "analytics_etl": [
+    {
+      "name": "abc",
+      "source_query": "select * from ABC where tenantid ='${tenant_name}'  ",
+      "sink_query": "select * from ${tenantid}_dm.XYZ",
+      "assertion": ">="
+    }
+  ]
+}
